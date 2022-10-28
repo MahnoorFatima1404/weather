@@ -27,7 +27,7 @@ function App() {
         Search Weather
       </button>
       <h3>{weather?.name}</h3>
-      <h3>{weather?.main?.temp}</h3>
+      <h3>{(weather?.main?.temp-273.15).toFixed(0)}</h3>
     </div>
   );
 }
